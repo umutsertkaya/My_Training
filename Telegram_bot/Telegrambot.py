@@ -6,8 +6,6 @@ load_dotenv()
 API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 def main():
-    def a2(message):
-        bot.reply_to(message, "Umut")
     @bot.message_handler(commands=["Merhaba","merhaba","selam","Selam"])
     def merhaba(message):
         bot.reply_to(message, "selam")
